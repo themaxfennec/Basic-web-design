@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Food Match & Safety Quiz</title>
+    <link rel="stylesheet" href="../css/food-quiz.css">
+</head>
+<body>
+    <nav class="top-nav-bar">
+        <div id="main-page">
+            <a href="../main.html">
+                <img src="../photos/logo.png" alt="Home" class="nav-logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <h2 id="blog-page"><a href="blog.html">Blog</a></h2>
+            <h2 id="norms-page"><a href="norms.html">Norms</a></h2>
+            <h2 id="travel-page"><a href="travel.html">Travel</a></h2>
+            <h2 id="contact-page"><a href="contact.html">Contact</a></h2>
+        </div>
+    </nav>
+
+    <!-- Page title Banner -->
+    <h1 id="top">Food & Allergy Quiz</h1>
+
+    <!-- Quiz Wrapper Container -->
+    <div id="quiz-wrapper">
+        
+        <!-- Progress Bar Indicator -->
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <form id="buzzfeed-quiz">
+            <!-- Question 1 -->
+            <div class="quiz-card active" id="q1">
+                <h3>1. How do you feel about sharing food from the same central pot or grill?</h3>
+                <div class="options-grid">
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="A" required>
+                        <span>Love it! The closer we are, the better the meal tastes.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="B">
+                        <span>I don't mind it, as long as everyone uses serving utensils.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="C">
+                        <span>I prefer having my own separate plate or bowl.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-card" id="q2">
+                <h3>2. What's your ideal vibe for a Friday night out with friends?</h3>
+                <div class="options-grid">
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="A" required>
+                        <span>Loud, energetic K-BBQ spot with smoke and laughing.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="B">
+                        <span>A cozy, hidden alleyway restaurant with deep conversations.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="C">
+                        <span>A modern, aesthetic café with beautiful dessert platters.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-card" id="q3">
+                <h3>3. How do you handle paying the bill after a massive feast with a big group?</h3>
+                <div class="options-grid">
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="A" required>
+                        <span>One person gets it, and we split it evenly later via transfer.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="B">
+                        <span>I prefer paying exactly for what I personally ordered.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="C">
+                        <span>I like treating my friends, or being treated in rounds!</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="quiz-card" id="q4">
+                <h3>4. Your squad wants to go for "Chimaek" (Chicken and Beer). What's your order?</h3>
+                <div class="options-grid">
+                    <label class="option-label">
+                        <input type="radio" name="q4" value="A" required>
+                        <span>Crispy Fried Chicken + Ice Cold Draft Beer.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q4" value="B">
+                        <span>Sweet & Spicy (Yangnyeom) Chicken + Soft Drink/Cola.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q4" value="C">
+                        <span>Garlic Soy Chicken + Refreshing sparkling water.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="quiz-card" id="q5">
+                <h3>5. How do you feel about cooking your own food at the restaurant table?</h3>
+                <div class="options-grid">
+                    <label class="option-label">
+                        <input type="radio" name="q5" value="A" required>
+                        <span>Obsessed! I love being the designated grill master.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q5" value="B">
+                        <span>Fun occasionally, but sometimes I just want the chef to do it.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q5" value="C">
+                        <span>Not a fan. Too much effort and risk of burning my dinner!</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="quiz-card" id="q6">
+                <h3>6. How adventurous are your friends when trying "unusual" food textures?</h3>
+                <div class="options-grid">
+                    <label class="option-label">
+                        <input type="radio" name="q6" value="A" required>
+                        <span>Extremely! Bring on the chewy rice cakes, intestines, and tentacle dishes!</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q6" value="B">
+                        <span>Moderately. They will try a bite, but stick to safe bets mostly.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q6" value="C">
+                        <span>Not at all. They prefer classic textures like crispy chicken or rice.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="quiz-card" id="q7">
+                <h3>7. How strictly do you need to avoid gluten (wheat/barley/rye) in your daily life?</h3>
+                <div class="options-grid">
+                    <label class="option-label">
+                        <input type="radio" name="q7" value="A" required>
+                        <span>Completely strict (Celiac disease or severe allergy). No soy sauce or wheat!</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q7" value="B">
+                        <span>Mild sensitivity. Small traces are fine, but I avoid bread/noodles.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q7" value="C">
+                        <span>Not at all. Give me all the ramen, mandu, and savory pancakes!</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="quiz-card" id="q8">
+                <h3>8. What is your stance on seafood and shellfish?</h3>
+                <div class="options-grid">
+                    <label class="option-label">
+                        <input type="radio" name="q8" value="A" required>
+                        <span>Severe allergy! I can't have fish oils, broths, or shellfish.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q8" value="B">
+                        <span>I dislike seafood textures/taste, but I won't have an allergic reaction.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q8" value="C">
+                        <span>Love it! From dried anchovy broths to grilled octopus, I want it all.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="quiz-card" id="q9">
+                <h3>9. How do you feel about eggs being added as a garnish or side dish?</h3>
+                <div class="options-grid">
+                    <label class="option-label">
+                        <input type="radio" name="q9" value="A" required>
+                        <span>Can't do it. Allergic to eggs or avoiding them completely.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q9" value="B">
+                        <span>Fine if mixed thoroughly into a dish, but don't like plain eggs.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q9" value="C">
+                        <span>Yes! Put a fried egg on my bibimbap and pass the steamed egg pot!</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="quiz-card" id="q10">
+                <h3>10. How do you handle cross-contamination risks (e.g., sharing a grill surface)?</h3>
+                <div class="options-grid">
+                    <label class="option-label">
+                        <input type="radio" name="q10" value="A" required>
+                        <span>Extremely dangerous for me. I need dedicated clean cooking surfaces.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q10" value="B">
+                        <span>Slightly concerned. I'll scrape a grill down but don't need a separate kitchen.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q10" value="C">
+                        <span>Zero worries. Share the plates, grills, and soup pots freely!</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="quiz-card" id="q11">
+                <h3>11. If a dish is labeled "mildly spicy," what are you assuming about its ingredients?</h3>
+                <div class="options-grid">
+                    <label class="option-label">
+                        <input type="radio" name="q11" value="A" required>
+                        <span>It might still be packed with red pepper flakes (Gochugaru) that upset my stomach.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q11" value="B">
+                        <span>It's probably safe but I'll keep a glass of milk nearby just in case.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q11" value="C">
+                        <span>In Korea, "mild" is basically nothing. Bring on the heat!</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Navigation Controls inside the form -->
+            <div class="quiz-controls">
+                <button type="button" id="prev-btn" disabled>Previous</button>
+                <button type="button" id="next-btn">Next</button>
+                <button type="submit" id="submit-btn" style="display: none;">See Recommendations</button>
+            </div>
+
+        </form>
+
+        <!-- Quiz Results Container (Hidden initially) -->
+        <div id="results-card" style="display: none;">
+            <h2>Foods I Recommend For Your Group:</h2>
+            <div id="recommended-dishes-container">
+                <!-- JavaScript will populate recommended dishes here dynamically -->
+            </div>
+
+            <hr class="result-divider">
+
+            <h3>Important Dietary & Dining Safety Tips:</h3>
+            <div id="allergy-safety-warnings">
+                <!-- JavaScript will dynamically drop allergy and cross-contamination alerts here -->
+            </div>
+
+            <button type="button" id="restart-btn" onclick="window.location.reload()">Take Quiz Again</button>
+        </div>
+
+    </div>
+
+    <!-- Script connection -->
+    <script src="../java/food-quiz.js"></script>
+</body>
+</html>

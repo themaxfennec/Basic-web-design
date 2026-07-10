@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding-top: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------------------------------*/
+/*This could have been its own file that spread across the project*/
+
+/*Sticky Top Navigation Bar*/
+.top-nav-bar {
+    position: fixed;       
+    top: 0;
+    left: 0;
+    width: 100%;           
+    z-index: 1000;         
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    
+    display: flex;
+    flex-direction: row;  
+    align-items: center;  
+    padding: 10px 20px;
+    gap: 30px;             
+    box-sizing: border-box;
+}
+/*Navigation Layout Links*/
+.nav-links {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    gap: 15px;            
+}
+
+.nav-links h2 {
+    margin: 0;
+    display: inline-block; 
+    font-size: 1.1rem; 
+}
+
+/*Button Styling*/
+.nav-links a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px; 
+    white-space: nowrap;  
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: green;
+    color: white;
+}
+
+/*Navigation Logo Dimensions*/
+.nav-logo {
+    width: 80px;          
+    height: 80px;         
+    object-fit: cover;
+    border-radius: 50%;   
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.05); 
+}
+
+/*Page Title Box with Background Banner*/
+#top {
+    text-align: center;
+    font-size: clamp(2.5rem, 8vw, 60px); 
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+    
+    /* Background Image */
+    background: url('../photos/mu/back-blog.jpg') no-repeat center center;
+    background-size: cover;
+    
+    /* Pushes content down beneath the navigation bar*/
+    height: 260px;        
+    padding-top: 100px;   
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    
+    margin: 0 auto 30px auto; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+/*---------------------------------*/
+
+/*Universal Text Padding*/
+#blog1 p, #blog2 p, #blog3 p, #blog2 h2, #blog3 h2 {
+    padding: 20px; 
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+#blog2-carousel {
+    width: 100%;
+}
+#blog2-carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#blog3 {
+    width: 90%;
+    clear: both; 
+}
+#blog3 img {
+    display: block;
+}
+#blog3 p {
+    background-color: lightblue;
+}
+
+/*Responsive Media Query*/
+@media (min-width: 768px) {
+    #blog1 p {
+        width: 40%;
+        float: left;
+        background-color: lightblue;
+    }
+    #blog1 img, #blog3 img {
+        width: 60%;
+        float: right;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+    #blog2 p {
+        width: 40%;
+        float: right;
+        background-color: rgb(245, 153, 153);
+    }
+    #blog2 h2 {
+        width: 40%;
+        float: right;
+    }
+    #blog2-carousel {
+        width: 60%;
+        float: left;
+    }
+    #blog2-carousel img {
+        width: 100%;
+        height: auto;
+    }
+
+    #blog3 {
+        width: 100%; 
+        max-width: none;
+        overflow: auto;
+    }
+    #blog3 h2 {
+        width: 40%;
+    }
+    #blog3 p {
+        width: 40%;
+        float: left;
+    }
+}

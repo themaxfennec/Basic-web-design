@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding-top: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9; 
+    display: flex;
+    flex-direction: column;
+}
+
+/*Sticky Top Navigation Bar*/
+.top-nav-bar {
+    position: fixed;       
+    top: 0;
+    left: 0;
+    width: 100%;           
+    z-index: 1000;         
+    background-color: #ffffff; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);    
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    padding: 10px 20px;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+/*Forces Buttons to Stay Side by Side*/
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links h2 {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.1rem; 
+}
+
+/*Button Styling*/
+.nav-links a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px; 
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hovering effect */
+.nav-links a:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Prominent logo dimensions */
+.nav-logo {
+    width: 80px;          
+    height: 80px;         
+    object-fit: cover;
+    border-radius: 50%;   
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.05); 
+}
+
+/*Page Title Box with Background*/
+#top {
+    text-align: center;
+    font-size: clamp(2.5rem, 8vw, 60px); 
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+    
+    /* Banner Background */
+    background: url('../photos/travel_background.jpg') no-repeat center center;
+    background-size: cover;
+    
+    /* Pushes content down beneath the sticky navigation bar cleanly */
+    height: 260px;        
+    padding-top: 100px;   
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    
+    margin: 0 auto 10px auto; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.quiz-container, .Article-container {
+    width: 80%;
+    margin: 20px auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Individual Quiz Block Boxes */
+.quiz-card {
+    background-color: lightblue;
+    border: 2px solid #555;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+}
+
+/* Quiz Button Link Styling */
+.quiz-card a {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+/* Hover effects using colors from your palette */
+.quiz-card:hover {
+    transform: scale(1.02);
+}
+.quiz-card a:hover {
+    background-color: rgb(245, 153, 153);
+}
+
+/* Individual Article Block Boxes */
+.Article-card {
+    background-color: rgb(245, 153, 153); 
+    border: 2px solid #555;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+}
+
+/* Article Button Link Styling */
+.Article-card a {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+/* Hover effects*/
+.Article-card:hover {
+    transform: scale(1.02);
+}
+.Article-card a:hover {
+    background-color: lightblue;
+}
+
+/* Description Text inside the cards */
+.quiz-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}

@@ -1,0 +1,253 @@
+.top-nav-bar {
+    position: fixed;       
+    top: 0;
+    left: 0;
+    width: 100%;           
+    z-index: 1000;         
+    background-color: #ffffff; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    padding: 10px 20px;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+#top {
+    text-align: center;
+    font-size: clamp(2.5rem, 8vw, 60px);
+    margin: 40px auto 20px auto;
+    background: none;
+    height: auto;
+    color: #333333;
+}
+
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links h2 {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.1rem; 
+}
+
+/*Button Styling*/
+.nav-links a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px; 
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hovering effect */
+.nav-links a:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Prominent logo dimensions */
+.nav-logo {
+    width: 80px;          
+    height: 80px;         
+    object-fit: cover;
+    border-radius: 50%;   
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.05); 
+}
+
+/* Offset for page contents */
+body {
+    padding-top: 110px; 
+}
+
+/*background an*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    animation: backgroundFade 12s ease-in-out infinite;
+}
+
+@keyframes backgroundFade {
+    0% {
+        background-color: lightblue;
+    }
+    50% {
+        background-color: lightgray;
+    }
+    100% {
+        background-color: lightblue;
+    }
+}
+#quiz-wrapper {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Progress bar container */
+#progress-container {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 9%; /* Initial progress width */
+    background-color: green;
+    transition: width 0.4s ease;
+}
+
+/* Quiz Card Container (Handles showing one question at a time) */
+.quiz-card {
+    display: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.quiz-card.active {
+    display: block;
+}
+
+/* Question Title Style */
+.quiz-card h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Forces each option onto its own row directly below the question */
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* Row-by-Row Label Styling */
+.option-label {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.option-label:hover {
+    background-color: #eef7fa;
+    border-color: #90DAEE;
+}
+
+/* Radio circle alignment spacing */
+.option-label input[type="radio"] {
+    margin-right: 15px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.quiz-controls {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.quiz-controls button, #restart-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #0007DF;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.quiz-controls button:hover, #restart-btn:hover {
+    background-color: darkblue;
+}
+
+/* Disabled Back/Prev button appearance */
+.quiz-controls button:disabled {
+    background-color: #ccc;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* Submit/Recommendations button prominence */
+#submit-btn {
+    background-color: green;
+}
+#submit-btn:hover {
+    background-color: darkgreen;
+}
+
+#results-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+#results-card h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.result-divider {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+/* Clean styling for dynamically injected recommended dish sections */
+.dish-recommendation, .warning-alert {
+    background-color: #f1f8ff;
+    border-left: 5px solid #90DAEE;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Dangerous warning highlights */
+.warning-alert {
+    background-color: #fff0f0;
+    border-left-color: #F4A6A6;
+}
+
+#restart-btn {
+    margin-top: 25px;
+    background-color: #333;
+}

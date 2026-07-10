@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <nav class="top-nav-bar">
+        <div id="main-page">
+            <a href="../main.html">
+                <img src="../photos/logo.png" alt="Home" class="nav-logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <h2 id="blog-page"><a href="blog.html">Blog</a></h2>
+            <h2 id="norms-page"><a href="norms.html">Norms</a></h2>
+            <h2 id="travel-page"><a href="travel.html">Travel</a></h2>
+            <h2 id="contact-page"><a href="contact.html">Contact</a></h2>
+        </div>
+    </nav>
+    <!-- Page title / hero banner -->
+    <h1 id="top">Contact</h1>
+
+    <!-- What this page is for section -->
+    <section id="contact-description">
+        <p>This is placeholder text for what this page is for. You can easily replace this paragraph text with your own explanation of why users should reach out, what to expect, or any other introductory details you want to share!</p>
+    </section>
+
+    <!-- Contact form wrapper -->
+    <div id="contact-wrapper">
+        <form id="contact-form">
+
+            <!-- Name field -->
+            <div class="form-group-name">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+            </div>
+
+            <!-- Email field -->
+            <div class="form-group-email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email" required>
+            </div>
+
+            <!-- Subject field -->
+            <div class="form-group-subject">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="What is this about?" required>
+            </div>
+
+            <!-- Message field -->
+            <div class="form-group-message">
+                <label for="message">Message</label>
+                <textarea id="message" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" id="submit-btn">Send Message</button>
+
+        </form>
+
+        <!-- Confirmation message, hidden until form is submitted -->
+        <p id="confirm-msg">Message sent! We'll get back to you soon.</p>
+    </div>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            document.getElementById("contact-form").style.display = "none";
+            document.getElementById("confirm-msg").style.display = "block";
+        });
+    </script>
+
+</body>
+</html>
